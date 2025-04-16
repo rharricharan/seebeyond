@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 :root {
     /* neutrals */
     --color-base: #f4f4f4;
@@ -30,7 +28,7 @@
     --color-p3: #290051;
 
     /*fonts*/
-    --font-helvetica: 'HelveticaNowDisplay';
+    --font-helvetica: 'HelveticaNowDisplay', sans-serif;
     --w400: 400;
     --w500: 500;
 }
@@ -40,17 +38,8 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(assets/fonts/HelveticaNowDisplay-Regular.woff)
-    format('woff');
-}
-
-@font-face {
-    font-family: 'HelveticaNowDisplay';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(assets/fonts/HelveticaNowDisplay-Regular.woff2)
-    format('woff2');
+    src: url('./assets/fonts/HelveticaNowDisplay-Regular.woff2') format('woff2'),
+         url('./assets/fonts/HelveticaNowDisplay-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -58,17 +47,8 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url(assets/fonts/HelveticaNowDisplay-Medium.woff)
-    format('woff');
-}
-
-@font-face {
-    font-family: 'HelveticaNowDisplay';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url(assets/fonts/HelveticaNowDisplay-Medium.woff2)
-    format('woff2');
+    src: url('./assets/fonts/HelveticaNowDisplay-Medium.woff2') format('woff2'),
+         url('./assets/fonts/HelveticaNowDisplay-Medium.woff') format('woff');
 }
 
 body {
