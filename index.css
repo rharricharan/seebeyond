@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+    /* neutrals */
+    --color-base: #f4f4f4;
+    --color-blk: #1a1a1a;
+    --color-whte: #ffffff;
+
+    /* oranges */
+    --color-o1: #FF7F50;
+    --color-o2: #D85E31;
+    --color-o3: #7B2100;
+    --color-o4: #721F00;
+
+    /* yellows */
+    --color-y1: #FFC72C;
+    --color-y2: #B48400;
+
+    /* blues */
+    --color-b1: #2D68F0;
+    --color-b2: #122030;
+    --color-b3: #8AB6F9;
+    --color-b35: #5983C4;
+    --color-b4: #A8C4EB;
+    --color-b45: #6984AA;
+
+    /* purples */
+    --color-p1: #AB72E4;
+    --color-p2: #8B4CC9;
+    --color-p3: #290051;
+
+    /*fonts*/
+    --font-helvetica: 'HelveticaNowDisplay';
+    --w400: 400;
+    --w500: 500;
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(assets/fonts/HelveticaNowDisplay-Regular.woff)
+    format('woff');
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(assets/fonts/HelveticaNowDisplay-Regular.woff2)
+    format('woff2');
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(assets/fonts/HelveticaNowDisplay-Medium.woff)
+    format('woff');
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(assets/fonts/HelveticaNowDisplay-Medium.woff2)
+    format('woff2');
+}
+
+body {
+    font-family: var(--font-helvetica);
+    font-weight: var(--w400);
+    background-color: var(--color-base);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
