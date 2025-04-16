@@ -3,21 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
     <title>MSB | See Beyond Festival</title>
 </head>
 <body>
     <div class="page-wrapper">
-        <header>
-            <div class="header-wrapper">
-                <a class="flex  hover:underline">
-                    <span>Back Home</span>
+        <header class="px-[16px] py-[8px] bg-[rgba(244, 244, 244, 0.6)] backdrop-blur-[20px] w-screen fixed top-0 z-[100]">
+            <div class="flex justify-between items-center w-full">
+                <a class="group px-[16px] py-[8px] flex gap-[16px] items-center text-[var(--color-blk)] transition-all duration-200 ease
+                    hover:underline cursor-pointer"
+                >
+                <span class="tracking-[-0.34px] flex items-center gap-[8px] text-[#767676] group-hover:text-[#1a1a1a] transition-all">
+                    <svg class="fill-[#767676] transform transition-transform
+                            group-hover:fill-[#1a1a1a]
+                            group-hover:translate-x-[-6px]"
+                        width="19"
+                        height="15"
+                        viewBox="0 0 19 15"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M6.94029 6.67504C7.39521 6.21874 8.13391 6.21763 8.59021 6.67255C9.04651 7.12747 9.04762 7.86616 8.5927 8.32246C8.13778 8.77876 7.39909 8.77988 6.94279 8.32496C6.48649 7.87003 6.48537 7.13134 6.94029 6.67504Z" />
+                        <path d="M10.24 6.67006C10.6949 6.21376 11.4336 6.21264 11.8899 6.66756C12.3462 7.12248 12.3473 7.86118 11.8924 8.31748C11.4375 8.77378 10.6988 8.77489 10.2425 8.31997C9.78619 7.86505 9.78507 7.12636 10.24 6.67006Z" />
+                        <path d="M13.5399 6.66506C13.9948 6.20876 14.7335 6.20765 15.1898 6.66257C15.6461 7.11749 15.6472 7.85618 15.1923 8.31248C14.7374 8.76878 13.9987 8.7699 13.5424 8.31498C13.0861 7.86005 13.085 7.12136 13.5399 6.66506Z" />
+                        <path d="M16.8396 6.66008C17.2945 6.20378 18.0332 6.20266 18.4895 6.65758C18.9458 7.1125 18.9469 7.8512 18.492 8.3075C18.0371 8.7638 17.2984 8.76491 16.8421 8.30999C16.3858 7.85507 16.3847 7.11638 16.8396 6.66008Z" />
+                        <path d="M3.64038 6.68003C4.0953 6.22373 4.83399 6.22261 5.29029 6.67753C5.74659 7.13246 5.74771 7.87115 5.29278 8.32745C4.83786 8.78375 4.09917 8.78486 3.64287 8.32994C3.18657 7.87502 3.18545 7.13633 3.64038 6.68003Z" />
+                        <path d="M3.64533 9.97986C4.10025 9.52356 4.83894 9.52245 5.29524 9.97737C5.75154 10.4323 5.75266 11.171 5.29774 11.6273C4.84282 12.0836 4.10412 12.0847 3.64782 11.6298C3.19152 11.1749 3.19041 10.4362 3.64533 9.97986Z" />
+                        <path d="M6.12398 12.451C6.5789 11.9947 7.3176 11.9936 7.77389 12.4485C8.23019 12.9034 8.23131 13.6421 7.77639 14.0984C7.32147 14.5547 6.58277 14.5558 6.12647 14.1009C5.67017 13.646 5.66906 12.9073 6.12398 12.451Z" />
+                        <path d="M6.10654 0.90159C6.56146 0.445291 7.30015 0.444174 7.75645 0.899097C8.21275 1.35402 8.21387 2.09271 7.75895 2.54901C7.30402 3.00531 6.56533 3.00643 6.10903 2.5515C5.65273 2.09658 5.65162 1.35789 6.10654 0.90159Z" />
+                        <path d="M0.340463 6.68501C0.795385 6.22871 1.53408 6.2276 1.99038 6.68252C2.44668 7.13744 2.44779 7.87613 1.99287 8.33243C1.53795 8.78873 0.799256 8.78985 0.342956 8.33493C-0.113343 7.88001 -0.11446 7.14131 0.340463 6.68501Z" />
+                        <path d="M3.63543 3.3802C4.09035 2.9239 4.82904 2.92278 5.28534 3.37771C5.74164 3.83263 5.74276 4.57132 5.28783 5.02762C4.83291 5.48392 4.09422 5.48504 3.63792 5.03011C3.18162 4.57519 3.1805 3.8365 3.63543 3.3802Z" />
+                    </svg>
+                    Back Home
+                </span>
                 </a>
-                <a class="color">
-                    <span>See Beyond Festival '25</span>
+                <a>
+                    <span class="px-[16px] py-[8px] flex font-medium tracking-[-0.34px]">See Beyond Festival '25</span>
                 </a>
-                <a>Register for free</a>
+                <a class="px-[16px] py-[8px] bg-white/0 rounded-[200px] text-black/80 
+                        hover:bg-black/10 transition-all duration-200 ease-in-out cursor-pointer
+                        hover:text-black/70"
+                    >
+                    Register for free
+                </a>
             </div>
         </header>
 

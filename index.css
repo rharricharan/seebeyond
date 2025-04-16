@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+:root {
     /* neutrals */
     --color-base: #f4f4f4;
     --color-blk: #1a1a1a;
@@ -79,6 +79,7 @@ body {
 
 * {
     box-sizing: border-box;
+    line-height: 140%;
     margin: 0;
     padding: 0;
 }
