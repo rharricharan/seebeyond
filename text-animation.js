@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Set initial state
-  gsap.set('.hero-text', { opacity: 0, y: 30 });
+gsap.set('.hero-text', { opacity: 0, y: 30 });
   gsap.set('.hero-text span', { opacity: 0, y: 30 });
 
   // Create animation timeline
