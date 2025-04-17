@@ -129,24 +129,24 @@
                         <div class="flex flex-row items-center bg-[#1a1a1a]/5 px-[16px] py-[16px] rounded-[16px]">
                             <div class="flex flex-col gap-[24px] items-start">
                                 <div class="flex flex-col gap-[12px] w-full">
-                                    <h2 class="text-[12px] text-[#0E1C2C]/60">See Beyond starts in...</h2>
+                                    <h2 class="text-[12px] text-[#0E1C2C]/60 text-[500] font-[Helvetica Now Display]">SEE BEYOND STARTS IN...</h2>
                                     <div class="w-full h-[1px] bg-[#1a1a1a]/20"></div>
                                 </div>
                                 <div class="countdown-timer flex flex-row gap-[6px] text-[20px] font-[500] tracking-[-0.53px]">
                                     <div class="flex flex-col items-center bg-[#1a1a1a]/5 rounded-[8px] py-[8px] px-[16px]">
-                                        <span id="days" class="text-[#2D68F0]">00</span>
+                                        <span id="days" class="text-[#1a1a1a]">00</span>
                                         <span class="text-[12px] text-[#0E1C2C]/60">DAYS</span>
                                     </div>
                                     <div class="flex flex-col items-center bg-[#1a1a1a]/5 rounded-[8px] py-[8px] px-[16px]">
-                                        <span id="hours" class="text-[#2D68F0]">00</span>
+                                        <span id="hours" class="text-[#1a1a1a]">00</span>
                                         <span class="text-[12px] text-[#0E1C2C]/60">HOURS</span>
                                     </div>
                                     <div class="flex flex-col items-center bg-[#1a1a1a]/5 rounded-[8px] py-[8px] px-[16px]">
-                                        <span id="minutes" class="text-[#2D68F0]">00</span>
+                                        <span id="minutes" class="text-[#1a1a1a]">00</span>
                                         <span class="text-[12px] text-[#0E1C2C]/60">MINUTES</span>
                                     </div>
                                     <div class="flex flex-col items-center bg-[#1a1a1a]/5 rounded-[8px] py-[8px] px-[16px]">
-                                        <span id="seconds" class="text-[#2D68F0]">00</span>
+                                        <span id="seconds" class="text-[#1a1a1a]">00</span>
                                         <span class="text-[12px] text-[#0E1C2C]/60">SECONDS</span>
                                     </div>
                                 </div>
@@ -500,6 +500,54 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section class="w-screen h-auto mt-[246px] p-[48px]">
+                <div class="text-reveal-content w-full h-auto flex justify-center items-center mx-auto relative">
+                    <div id="video-cover" class="absolute inset-0 w-full h-[900px] cursor-pointer rounded-[16px] overflow-hidden z-[1]">
+                        <img
+                            src="assets/230429_Beyond Festival_0566.jpg"
+                            alt="Family sharing smiles at the See Beyond Festival while enjoying some ice cream"
+                            class="w-full h-full object-cover"
+                        >
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-all">
+                            <div class="w-[80px] h-[80px] bg-white/80 rounded-full flex items-center justify-center hover:scale-105 transition-transform">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="8" height="8" rx="4" fill="#FF7F50"/>
+                                    <rect y="12" width="8" height="8" rx="4" fill="#FF7F50"/>
+                                    <rect y="24" width="8" height="8" rx="4" fill="#FF7F50"/>
+                                    <rect x="12" y="17.3335" width="8" height="8" rx="4" fill="#FF7F50"/>
+                                    <rect x="24" y="10.6665" width="8" height="8" rx="4" fill="#FF7F50"/>
+                                    <rect x="12" y="5.3335" width="8" height="8" rx="4" fill="#FF7F50"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        id="youtube-video"
+                        class="rounded-[16px]"
+                        width="100%"
+                        height="900"
+                        src="https://www.youtube.com/embed/R3j2RlRw5G4?si=zmznz2kOS8Thhlg1"
+                        title="See Beyond Festival 2025 Video"
+                        frameborder="0"
+                        allow="accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                    <script>
+                        document.getElementById('video-cover').addEventListener('click', function() {
+                            this.style.display = 'none';
+                            const iframe = document.getElementById('youtube-video');
+                            iframe.src = iframe.src.replace('autoplay=0', 'autoplay=1');
+                        });
+                    </script>
                 </div>
             </section>
         </main>
