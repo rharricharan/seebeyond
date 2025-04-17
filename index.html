@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="circle.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="scroll-animation.js" defer></script>
+    <script src="text-animation.js" defer></script>
     <link rel="stylesheet" href="index.css">
     <title>MSB | See Beyond Festival</title>
 </head>
@@ -42,7 +46,7 @@
                     <span class="px-[16px] py-[8px] flex font-medium tracking-[-0.34px]">See Beyond Festival '25</span>
                 </a>
                 <a class="px-[16px] py-[8px] bg-white/0 rounded-[200px] text-black/80 
-                        hover:bg-black/10 transition-all duration-200 ease-in-out cursor-pointer
+                        hover:bg-black/5 transition-all duration-200 ease-in-out cursor-pointer
                         hover:text-black/70"
                     >
                     Register for free
@@ -54,7 +58,7 @@
             <section class="w-screen h-auto mt-[72px] p-[48px]">
                 <div>
                     <div>
-                        <h1 class="text-[#122030] text-[64px] tracking-[-2px] leading-[110%] flex flex-col font-[400]">
+                        <h1 class="hero-text text-[#122030] text-[64px] tracking-[-2px] leading-[110%] flex flex-col font-[400]">
                             An immersive, hand-on experience
                             <span>
                                 of accessibility and adaptation.
@@ -125,12 +129,12 @@
                     </div>
                 </div>
             </section>
-            <div class="p-[16px] w-screen mt-[72px]">
+            <div class="scroll-image p-[16px] w-screen mt-[72px]">
                 <img class="rounded-[16px] w-full h-full object-cover" src="/assets/230429_Beyond Festival_1526.jpg" alt="Girls running on the msb track">
             </div>
             <section class="w-screen h-auto mt-[246px]">
-                <div class="flex flex-col justify-center items-center gap-[72px]">
-                    <h2 class="text-[36px] leading-[110%] font-[400] text-center w-[55%] text-[#1C2A3A]">
+                <div class="flex flex-col justify-center items-center gap-[146px]">
+                    <h2 class="text-[36px] leading-[110%] font-[400] text-center w-[55%] text-[#1C2A3A] tracking-[-1.06px]">
                         We provide an interactive, hands-on opportunity for the community to experience adaptation, raising awareness on why accessibility is essential for all.
                     </h2>
                     <div>
@@ -145,6 +149,52 @@
                                 <img class="w-full h-full rounded-[16px] object-cover" src="assets/230429_Beyond Festival_1055.jpg" alt="">
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="w-screen mt-[246px]">
+                <div class="w-full h-auto flex flex-row gap-[48px] justify-center items-center p-[48px]">
+                    <div class="w-full h-[700px] flex flex-col items-start justify-center">
+                        <div class="flex flex-col justify-start items-start gap-[36px] w-[90%]">
+                            <h2 class="w-full h-auto text-[36px] text-[#1C2A3A] tracking-[-0.63px]">
+                                Register now for a chance to win a <span class="text-[#9556D3]">Meta Quest 3S</span> or <span class="text-[#2D68F0]">Ray-Ban Meta Wayfarer</span>.
+                            </h2>
+                            <p class="text-[400] text-[20px] text-[#1C2A3A]/70 w-[80%]">
+                                Prizes are awarded during the See Beyond Festival, Live raffle the night before the event.
+                            </p>
+                            <a class="animate-button group text-[20px] text-[#f4f4f4] flex flex-row gap-[16px] justify-center items-center bg-[#2D68F0] px-[24px] py-[12px] rounded-[200px] font-[Helvetica Now Display] tracking-[-0.24px] transition-all outline outline-[3px] outline-[#2D68F0]/0 outline-offset-[0px]
+                                hover:bg-[#2B65ED] cursor-pointer
+                                hover:outline-[#2D68F0]/50"
+                                >
+                                Enter to win
+                                <svg class="transform transition-transform group-hover:translate-x-[6px]" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="13.1982" cy="11.4997" rx="1.33334" ry="1.3334" transform="rotate(45 13.1982 11.4997)" fill="#F4F4F4"/>
+                                    <ellipse cx="9.42745" cy="11.4997" rx="1.33334" ry="1.3334" transform="rotate(45 9.42745 11.4997)" fill="#F4F4F4"/>
+                                    <ellipse cx="5.65548" cy="11.4997" rx="1.33334" ry="1.3334" transform="rotate(45 5.65548 11.4997)" fill="#F4F4F4"/>
+                                    <ellipse cx="1.8857" cy="11.4999" rx="1.33334" ry="1.3334" transform="rotate(45 1.8857 11.4999)" fill="#F4F4F4"/>
+                                    <ellipse cx="16.9707" cy="11.4997" rx="1.33334" ry="1.3334" transform="rotate(45 16.9707 11.4997)" fill="#F4F4F4"/>
+                                    <ellipse cx="16.9702" cy="7.72918" rx="1.33334" ry="1.3334" transform="rotate(45 16.9702 7.72918)" fill="#F4F4F4"/>
+                                    <ellipse cx="14.1416" cy="4.90056" rx="1.33334" ry="1.3334" transform="rotate(45 14.1416 4.90056)" fill="#F4F4F4"/>
+                                    <ellipse cx="14.1408" cy="18.1003" rx="1.33334" ry="1.3334" transform="rotate(45 14.1408 18.1003)" fill="#F4F4F4"/>
+                                    <ellipse cx="20.7409" cy="11.4997" rx="1.33334" ry="1.3334" transform="rotate(45 20.7409 11.4997)" fill="#F4F4F4"/>
+                                    <ellipse cx="16.9699" cy="15.2714" rx="1.33334" ry="1.3334" transform="rotate(45 16.9699 15.2714)" fill="#F4F4F4"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full h-auto bg-[#000000]/5 p-[9rem] flex justify-center items-center rounded-[16px]">
+                        <img class="w-[446px] h-[400px] rounded-[16px]" src="assets/metaquest.webp" alt="The Meta Quest 3S photo">
+                    </div>
+                </div>
+            </section>
+            <section class="w-screen h-auto mt-[246px]">
+                <div class="flex flex-col justify-center items-center gap-[72px]">
+                    <h2 class="text-[36px] text-center ">
+                        See Beyond Events
+                        <span class="text-[#7D7D7D]">It's free</span>
+                    </h2>
+                    <div>
+
                     </div>
                 </div>
             </section>

@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
     /* neutrals */
     --color-base: #f4f4f4;
