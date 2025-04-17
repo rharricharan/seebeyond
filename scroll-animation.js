@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
           scale: 1.05,
           borderRadius: 0,
           duration: 0.25,
-          ease: "power2.ease"
+          ease: "power2.easeInOut"
         });
       },
       onLeave: () => {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
           scale: 0.8,
           borderRadius: "16px",
           duration: 0.25,
-          ease: "power2.ease"
+          ease: "power2.easeInOut"
         });
       },
       onEnterBack: () => {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
           scale: 1.05,
           borderRadius: 0,
           duration: 0.25,
-          ease: "power2.ease"
+          ease: "power2.easeInOutBack"
         });
       },
       onLeaveBack: () => {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
           scale: 1,
           borderRadius: "16px",
           duration: 0.25,
-          ease: "power2.ease"
+          ease: "power2.easeInOut"
         });
       }
     }
