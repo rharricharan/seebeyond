@@ -130,3 +130,8 @@ body {
 .animate-scroll {
     animation: scroll 20s linear infinite;
 }
+
+.event-card {
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
