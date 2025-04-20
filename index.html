@@ -27,7 +27,7 @@
 <body>
     <div class="w-screen h-screen">
         <header class="px-[8px] sm:px-[16px] py-[8px] bg-[#F4F4F4]/80 backdrop-blur-[20px] w-screen fixed top-0 z-[100] border-b border-black/5">
-            <div class="flex flex-col sm:flex-row justify-between items-center w-full gap-[8px] sm:gap-0">
+            <div class="flex flex-row sm:flex-row justify-between items-center w-full gap-[8px] sm:gap-0">
                 <a href="https://www.marylandschoolfortheblind.org/" class="group px-[16px] py-[8px] flex gap-[16px] items-center text-[var(--color-blk)] transition-all duration-200 ease
                     hover:underline cursor-pointer"
                 >
@@ -55,11 +55,13 @@
                 </span>
                 </a>
                 <a>
-                    <span class="px-[16px] py-[8px] flex font-medium tracking-[-0.34px] bg-gradient-to-r from-[#8620EA] to-[#FF7F50] text-transparent bg-clip-text">See Beyond Festival '25</span>
+                    <span class="px-[16px] py-[8px] flex font-medium tracking-[-0.34px] bg-gradient-to-r from-[#8620EA] to-[#FF7F50] text-transparent bg-clip-text
+                        w-xs:font-small sm:font-small text-center">See Beyond Festival '25</span>
                 </a>
-                <a href="https://host.nxt.blackbaud.com/registration-form/?formId=8184561b-be21-4af8-8a4c-dfbd98aab45e&envId=p-xZl3P3rvuEquxGbkftO25w&zone=usa" target="_blank" class="px-[16px] py-[8px] bg-white/0 rounded-[200px] text-black/80 
+                <a href="https://host.nxt.blackbaud.com/registration-form/?formId=8184561b-be21-4af8-8a4c-dfbd98aab45e&envId=p-xZl3P3rvuEquxGbkftO25w&zone=usa" target="_blank" class="px-[16px] py-[8px] bg-white/0 rounded-[200px] text-black/80 hidden
                         hover:bg-black/5 transition-all duration-200 ease-in-out cursor-pointer
-                        hover:text-black/70"
+                        hover:text-black/70
+                        sm:hidden md:block"
                     >
                     Register for free
                 </a>
@@ -82,16 +84,16 @@
         <main>
             <section class="w-screen h-auto mt-[72px] p-[48px]">
                 <div>
-                    <div>
-                        <h1 class="hero-text text-[#122030] text-[32px] sm:text-[48px] md:text-[64px] tracking-[-2px] leading-[110%] flex flex-col font-[400]">
+                    <div class="w-full">
+                        <h1 class="hero-text text-[#122030] text-[32px] sm:text-[48px] md:text-[64px] tracking-[-1.23px] leading-[110%] inline-flex flex-col font-[400]">
                             An immersive, hand-on experience
                             <span>
                                 of <span class="bg-gradient-to-r from-[#122030] to-[#FF7F50] text-transparent bg-clip-text">accessibility</span> and <span class="bg-gradient-to-r from-[#FF7F50] to-[#8620EA] text-transparent bg-clip-text">adaptation</span>.
                             </span>
                         </h1>
                     </div>
-                    <div class="w-full h-auto flex flex-row justify-between items-center mt-[72px]">
-                        <div class="flex flex-col sm:flex-row gap-[24px] sm:gap-[48px] md:gap-[146px] w-auto h-auto justify-start items-start sm:items-center">
+                    <div class="w-full h-auto flex flex-col justify-between items-start mt-[72px]">
+                        <div class="flex flex-row sm:flex-col gap-[24px] sm:gap-[48px] md:gap-[146px] w-full h-auto justify-start items-start sm:items-center">
                             <div class="event-details flex flex-col justify-start items-start gap-[12px]">
                                 <h4 class="text-[12px] font-[500] text-[#0E1C2C]/60 leading-[140%] tracking-[0px]">
                                     WHEN
